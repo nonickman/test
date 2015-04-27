@@ -3,6 +3,7 @@ from __future__ import division
 from bs4 import BeautifulSoup
 import nltk, re, pprint, os, math, operator
 
+#path to folder with the html files
 path="C:\\Users\\spyros\\Downloads\\diplomatiki\\work\\s\\"
 
 lst=os.listdir(path)
