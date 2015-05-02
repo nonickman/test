@@ -107,10 +107,18 @@ def savecleaned(cleaned):
     txt_file.write(cleaned)
     txt_file.close()
 
-#print keywords
+#print keywords and save them to txt
 def prnt_keywords():
+    t="keywords.txt"
+    txt_file=open(t, "w")
     for key, val in keywords.items():
+        m="\n"+key+"\n"
+        txt_file.write(m)
+        n=' '.join(str(x) for x in val)
+        p=n+"\n"
+        txt_file.write(p)
         print("\n[Article]: ", key, "\n[Keywords]: ", val)
+    txt_file.close()
 
 
 #term - [list of document names containing term] 
